@@ -1,0 +1,76 @@
+{
+  "motos": [
+    { "id": 1, "nome": "CG 160 Start", "marca": "Honda", "ano": 2024, "preco": 15000, "imagem": "https://via.placeholder.com/300x200?text=Honda+CG+160" },
+    { "id": 2, "nome": "CG 160 Fan", "marca": "Honda", "ano": 2024, "preco": 17000, "imagem": "https://via.placeholder.com/300x200?text=Honda+CG+Fan" },
+    { "id": 3, "nome": "CG 160 Titan", "marca": "Honda", "ano": 2024, "preco": 19000, "imagem": "https://via.placeholder.com/300x200?text=Honda+CG+Titan" },
+    { "id": 4, "nome": "Biz 125", "marca": "Honda", "ano": 2024, "preco": 16000, "imagem": "https://via.placeholder.com/300x200?text=Honda+Biz+125" },
+    { "id": 5, "nome": "Pop 110i", "marca": "Honda", "ano": 2024, "preco": 12000, "imagem": "https://via.placeholder.com/300x200?text=Honda+Pop+110" },
+
+    { "id": 6, "nome": "NXR 160 Bros", "marca": "Honda", "ano": 2024, "preco": 20000, "imagem": "https://via.placeholder.com/300x200?text=Honda+Bros" },
+    { "id": 7, "nome": "CB 300F Twister", "marca": "Honda", "ano": 2024, "preco": 24000, "imagem": "https://via.placeholder.com/300x200?text=CB+300F" },
+    { "id": 8, "nome": "XRE 300", "marca": "Honda", "ano": 2024, "preco": 30000, "imagem": "https://via.placeholder.com/300x200?text=XRE+300" },
+    { "id": 9, "nome": "PCX 160", "marca": "Honda", "ano": 2024, "preco": 21000, "imagem": "https://via.placeholder.com/300x200?text=Honda+PCX" },
+    { "id": 10, "nome": "ADV 160", "marca": "Honda", "ano": 2024, "preco": 24000, "imagem": "https://via.placeholder.com/300x200?text=Honda+ADV" },
+
+    { "id": 11, "nome": "Factor 150", "marca": "Yamaha", "ano": 2024, "preco": 16000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+Factor" },
+    { "id": 12, "nome": "Fazer 150", "marca": "Yamaha", "ano": 2024, "preco": 18000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+Fazer+150" },
+    { "id": 13, "nome": "FZ25", "marca": "Yamaha", "ano": 2024, "preco": 23000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+FZ25" },
+    { "id": 14, "nome": "Lander 250", "marca": "Yamaha", "ano": 2024, "preco": 27000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+Lander" },
+    { "id": 15, "nome": "XTZ 150 Crosser", "marca": "Yamaha", "ano": 2024, "preco": 19000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+Crosser" },
+
+    { "id": 16, "nome": "MT-03", "marca": "Yamaha", "ano": 2024, "preco": 32000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+MT03" },
+    { "id": 17, "nome": "R3", "marca": "Yamaha", "ano": 2024, "preco": 35000, "imagem": "https://via.placeholder.com/300x200?text=Yamaha+R3" },
+
+    { "id": 18, "nome": "Dominar 200", "marca": "Bajaj", "ano": 2024, "preco": 20000, "imagem": "https://via.placeholder.com/300x200?text=Bajaj+Dominar+200" },
+    { "id": 19, "nome": "Dominar 400", "marca": "Bajaj", "ano": 2024, "preco": 25000, "imagem": "https://via.placeholder.com/300x200?text=Bajaj+Dominar+400" },
+
+    { "id": 20, "nome": "Meteor 350", "marca": "Royal Enfield", "ano": 2024, "preco": 24000, "imagem": "https://via.placeholder.com/300x200?text=Meteor+350" },
+    { "id": 21, "nome": "Classic 350", "marca": "Royal Enfield", "ano": 2024, "preco": 23000, "imagem": "https://via.placeholder.com/300x200?text=Classic+350" },
+    { "id": 22, "nome": "Himalayan 411", "marca": "Royal Enfield", "ano": 2024, "preco": 28000, "imagem": "https://via.placeholder.com/300x200?text=Himalayan" },
+
+    { "id": 23, "nome": "NK 400", "marca": "CFMoto", "ano": 2024, "preco": 33000, "imagem": "https://via.placeholder.com/300x200?text=CFMoto+NK400" },
+    { "id": 24, "nome": "250SR", "marca": "CFMoto", "ano": 2024, "preco": 29000, "imagem": "https://via.placeholder.com/300x200?text=CFMoto+250SR" },
+
+    { "id": 25, "nome": "GSX-S750", "marca": "Suzuki", "ano": 2023, "preco": 48000, "imagem": "https://via.placeholder.com/300x200?text=Suzuki+GSX-S750" },
+    { "id": 26, "nome": "V-Strom 650", "marca": "Suzuki", "ano": 2023, "preco": 52000, "imagem": "https://via.placeholder.com/300x200?text=VStrom+650" },
+
+    { "id": 27, "nome": "Z400", "marca": "Kawasaki", "ano": 2024, "preco": 34000, "imagem": "https://via.placeholder.com/300x200?text=Kawasaki+Z400" },
+    { "id": 28, "nome": "Ninja 400", "marca": "Kawasaki", "ano": 2024, "preco": 36000, "imagem": "https://via.placeholder.com/300x200?text=Ninja+400" },
+
+    { "id": 29, "nome": "G 310 R", "marca": "BMW", "ano": 2024, "preco": 39000, "imagem": "https://via.placeholder.com/300x200?text=BMW+G310R" },
+    { "id": 30, "nome": "G 310 GS", "marca": "BMW", "ano": 2024, "preco": 43000, "imagem": "https://via.placeholder.com/300x200?text=BMW+G310GS" },
+    { "id": 31, "nome": "F 900 R", "marca": "BMW", "ano": 2024, "preco": 72000, "imagem": "https://via.placeholder.com/300x200?text=BMW+F900R" },
+    { "id": 32, "nome": "F 900 GS", "marca": "BMW", "ano": 2024, "preco": 79000, "imagem": "https://via.placeholder.com/300x200?text=BMW+F900GS" },
+    { "id": 33, "nome": "F 900 GS Adventure", "marca": "BMW", "ano": 2024, "preco": 91000, "imagem": "https://via.placeholder.com/300x200?text=BMW+F900GSA" },
+    { "id": 34, "nome": "R 1300 GS", "marca": "BMW", "ano": 2024, "preco": 110000, "imagem": "https://via.placeholder.com/300x200?text=BMW+R1300GS" },
+    { "id": 35, "nome": "R 1300 GS Adventure", "marca": "BMW", "ano": 2024, "preco": 140000, "imagem": "https://via.placeholder.com/300x200?text=BMW+R1300GSA" },
+    { "id": 36, "nome": "S 1000 RR", "marca": "BMW", "ano": 2024, "preco": 140000, "imagem": "https://via.placeholder.com/300x200?text=BMW+S1000RR" },
+    { "id": 37, "nome": "S 1000 R", "marca": "BMW", "ano": 2024, "preco": 120000, "imagem": "https://via.placeholder.com/300x200?text=BMW+S1000R" },
+    { "id": 38, "nome": "M 1000 R", "marca": "BMW", "ano": 2024, "preco": 180000, "imagem": "https://via.placeholder.com/300x200?text=BMW+M1000R" },
+    { "id": 39, "nome": "M 1000 RR", "marca": "BMW", "ano": 2024, "preco": 220000, "imagem": "https://via.placeholder.com/300x200?text=BMW+M1000RR" },
+    { "id": 40, "nome": "R 18", "marca": "BMW", "ano": 2024, "preco": 135000, "imagem": "https://via.placeholder.com/300x200?text=BMW+R18" },
+    { "id": 41, "nome": "R 12", "marca": "BMW", "ano": 2024, "preco": 90000, "imagem": "https://via.placeholder.com/300x200?text=BMW+R12" },
+    { "id": 42, "nome": "K 1600 GTL", "marca": "BMW", "ano": 2024, "preco": 320000, "imagem": "https://via.placeholder.com/300x200?text=BMW+K1600GTL" },
+    { "id": 43, "nome": "C 400 X", "marca": "BMW", "ano": 2024, "preco": 65000, "imagem": "https://via.placeholder.com/300x200?text=BMW+C400X" },
+
+    { "id": 44, "nome": "Ninja 650", "marca": "Kawasaki", "ano": 2024, "preco": 45000, "imagem": "https://via.placeholder.com/300x200?text=Ninja+650" },
+    { "id": 45, "nome": "Z900", "marca": "Kawasaki", "ano": 2024, "preco": 60000, "imagem": "https://via.placeholder.com/300x200?text=Kawasaki+Z900" },
+    { "id": 46, "nome": "Ninja ZX-10R", "marca": "Kawasaki", "ano": 2024, "preco": 120000, "imagem": "https://via.placeholder.com/300x200?text=ZX10R" },
+
+    { "id": 47, "nome": "MT-07", "marca": "Yamaha", "ano": 2024, "preco": 47000, "imagem": "https://via.placeholder.com/300x200?text=MT07" },
+    { "id": 48, "nome": "MT-09", "marca": "Yamaha", "ano": 2024, "preco": 58000, "imagem": "https://via.placeholder.com/300x200?text=MT09" },
+    { "id": 49, "nome": "MT-10", "marca": "Yamaha", "ano": 2024, "preco": 85000, "imagem": "https://via.placeholder.com/300x200?text=MT10" },
+    { "id": 50, "nome": "Tracer 900 GT", "marca": "Yamaha", "ano": 2024, "preco": 75000, "imagem": "https://via.placeholder.com/300x200?text=Tracer+900" },
+
+    { "id": 51, "nome": "Panigale V4", "marca": "Ducati", "ano": 2024, "preco": 180000, "imagem": "https://via.placeholder.com/300x200?text=Panigale+V4" },
+    { "id": 52, "nome": "Monster 937", "marca": "Ducati", "ano": 2024, "preco": 95000, "imagem": "https://via.placeholder.com/300x200?text=Ducati+Monster" },
+    { "id": 53, "nome": "Multistrada V4", "marca": "Ducati", "ano": 2024, "preco": 150000, "imagem": "https://via.placeholder.com/300x200?text=Multistrada+V4" },
+
+    { "id": 54, "nome": "Street Triple 765", "marca": "Triumph", "ano": 2024, "preco": 58000, "imagem": "https://via.placeholder.com/300x200?text=Street+Triple" },
+    { "id": 55, "nome": "Tiger 900", "marca": "Triumph", "ano": 2024, "preco": 72000, "imagem": "https://via.placeholder.com/300x200?text=Tiger+900" },
+    { "id": 56, "nome": "Rocket 3", "marca": "Triumph", "ano": 2024, "preco": 120000, "imagem": "https://via.placeholder.com/300x200?text=Rocket+3" },
+
+    { "id": 57, "nome": "CBR 1000RR-R Fireblade", "marca": "Honda", "ano": 2024, "preco": 190000, "imagem": "https://via.placeholder.com/300x200?text=Fireblade" },
+    { "id": 58, "nome": "Hayabusa", "marca": "Suzuki", "ano": 2024, "preco": 115000, "imagem": "https://via.placeholder.com/300x200?text=Hayabusa" }
+  ]
+}
