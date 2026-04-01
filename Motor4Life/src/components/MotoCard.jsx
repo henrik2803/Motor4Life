@@ -7,13 +7,11 @@ import { formatPrice } from "../utils/formatPrice";
 
 function MotoCard({ moto }) {
   const { addToCart } = useContext(CartContext);
-  const { favorites, toggleFavorite } = useContext(FavoritesContext);
-
-  const isFavorite = favorites.some((f) => f.id === moto.id);
+  const { toggleFavorite, isFavorite } = useContext(FavoritesContext);
 
   return (
     <div>
-      <img src={moto.imagem} alt={moto.nome} width="200" />
+      <img src={moto.imagem || moto.images?.[0]} alt={moto.nome} width="200" />
 
       <h3>{moto.nome}</h3>
       <p>{moto.marca}</p>
@@ -21,7 +19,7 @@ function MotoCard({ moto }) {
       <p>{formatPrice(moto.preco)}</p>
 
       <button onClick={() => toggleFavorite(moto)}>
-        {isFavorite ? "❤️" : "🤍"}
+        {isFavorite(moto.id) ? "❤️" : "🤍"}
       </button>
 
       <button onClick={() => addToCart(moto)}>
