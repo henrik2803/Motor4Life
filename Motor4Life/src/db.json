@@ -1,78 +1,662 @@
 {
-  "motos": [
-    { "id": 1, "nome": "CG 160 Start", "marca": "Honda", "ano": 2024, "preco": 15000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 2, "nome": "CG 160 Fan", "marca": "Honda", "ano": 2024, "preco": 17000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 3, "nome": "CG 160 Titan", "marca": "Honda", "ano": 2024, "preco": 19000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 4, "nome": "Biz 125", "marca": "Honda", "ano": 2024, "preco": 16000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 5, "nome": "Pop 110i", "marca": "Honda", "ano": 2024, "preco": 12000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 6, "nome": "NXR 160 Bros", "marca": "Honda", "ano": 2024, "preco": 20000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 7, "nome": "CB 300F Twister", "marca": "Honda", "ano": 2024, "preco": 24000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 8, "nome": "XRE 300", "marca": "Honda", "ano": 2024, "preco": 30000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 9, "nome": "PCX 160", "marca": "Honda", "ano": 2024, "preco": 21000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 10, "nome": "ADV 160", "marca": "Honda", "ano": 2024, "preco": 24000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 11, "nome": "Factor 150", "marca": "Yamaha", "ano": 2024, "preco": 16000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 12, "nome": "Fazer 150", "marca": "Yamaha", "ano": 2024, "preco": 18000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 13, "nome": "FZ25", "marca": "Yamaha", "ano": 2024, "preco": 23000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 14, "nome": "Lander 250", "marca": "Yamaha", "ano": 2024, "preco": 27000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 15, "nome": "XTZ 150 Crosser", "marca": "Yamaha", "ano": 2024, "preco": 19000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 16, "nome": "MT-03", "marca": "Yamaha", "ano": 2024, "preco": 32000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 17, "nome": "R3", "marca": "Yamaha", "ano": 2024, "preco": 35000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 18, "nome": "Dominar 200", "marca": "Bajaj", "ano": 2024, "preco": 20000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 19, "nome": "Dominar 400", "marca": "Bajaj", "ano": 2024, "preco": 25000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 20, "nome": "Meteor 350", "marca": "Royal Enfield", "ano": 2024, "preco": 24000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 21, "nome": "Classic 350", "marca": "Royal Enfield", "ano": 2024, "preco": 23000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 22, "nome": "Himalayan 411", "marca": "Royal Enfield", "ano": 2024, "preco": 28000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 23, "nome": "NK 400", "marca": "CFMoto", "ano": 2024, "preco": 33000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 24, "nome": "250SR", "marca": "CFMoto", "ano": 2024, "preco": 29000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 25, "nome": "GSX-S750", "marca": "Suzuki", "ano": 2023, "preco": 48000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 26, "nome": "V-Strom 650", "marca": "Suzuki", "ano": 2023, "preco": 52000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 27, "nome": "Z400", "marca": "Kawasaki", "ano": 2024, "preco": 34000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 28, "nome": "Ninja 400", "marca": "Kawasaki", "ano": 2024, "preco": 36000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 29, "nome": "G 310 R", "marca": "BMW", "ano": 2024, "preco": 39000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 30, "nome": "G 310 GS", "marca": "BMW", "ano": 2024, "preco": 43000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 31, "nome": "F 900 R", "marca": "BMW", "ano": 2024, "preco": 72000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 32, "nome": "F 900 GS", "marca": "BMW", "ano": 2024, "preco": 79000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 33, "nome": "F 900 GS Adventure", "marca": "BMW", "ano": 2024, "preco": 91000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 34, "nome": "R 1300 GS", "marca": "BMW", "ano": 2024,"preco": 110000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 35, "nome": "R 1300 GS Adventure", "marca": "BMW", "ano": 2024, "preco": 14000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 36, "nome": "S 1000 RR", "marca": "BMW", "ano": 2024, "preco": 140000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 37, "nome": "S 1000 R", "marca": "BMW", "ano": 2024, "preco": 120000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 38, "nome": "M 1000 R", "marca": "BMW", "ano": 2024, "preco": 180000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 39, "nome": "M 1000 RR", "marca": "BMW", "ano": 2024, "preco": 220000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 40, "nome": "R 18", "marca": "BMW", "ano": 2024, "preco": 135000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 41, "nome": "R 12", "marca": "BMW", "ano": 2024, "preco": 90000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 42, "nome": "K 1600 GTL", "marca": "BMW", "ano": 2024, "preco": 320000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 43, "nome": "C 400 X", "marca": "BMW", "ano": 2024, "preco": 65000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 44, "nome": "Ninja 650", "marca": "Kawasaki", "ano": 2024, "preco": 45000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 45, "nome": "Z900", "marca": "Kawasaki", "ano": 2024, "preco": 60000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 46, "nome": "Ninja ZX-10R", "marca": "Kawasaki", "ano": 2024, "preco": 120000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 47, "nome": "MT-07", "marca": "Yamaha", "ano": 2024, "preco": 47000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 48, "nome": "MT-09", "marca": "Yamaha", "ano": 2024, "preco": 58000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 49, "nome": "MT-10", "marca": "Yamaha", "ano": 2024, "preco": 85000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 50, "nome": "Tracer 900 GT", "marca": "Yamaha", "ano": 2024, "preco": 75000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 51, "nome": "Panigale V4", "marca": "Ducati", "ano": 2024, "preco": 180000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 52, "nome": "Monster 937", "marca": "Ducati", "ano": 2024, "preco": 95000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 53, "nome": "Multistrada V4", "marca": "Ducati", "ano": 2024, "preco": 150000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 54, "nome": "Street Triple 765", "marca": "Triumph", "ano": 2024, "preco": 58000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 55, "nome": "Tiger 900", "marca": "Triumph", "ano": 2024, "preco": 72000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 56, "nome": "Rocket 3", "marca": "Triumph", "ano": 2024, "preco": 120000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-
-    { "id": 57, "nome": "CBR 1000RR-R Fireblade", "marca": "Honda", "ano": 2024, "preco": 190000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 58, "nome": "Hayabusa", "marca": "Suzuki", "ano": 2024, "preco": 115000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 59, "nome": "Ninja H2", "marca": "Kawasaki", "ano": 2024, "preco": 250000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] },
-    { "id": 60, "nome": "S1000RR", "marca": "BMW", "ano": 2024, "preco": 140000, "imagem": ["/assets/exemplo1.jpg", "/assets/exemplo2.jpg"] }
-  ]
+  "motos": [    {
+      "id": "1",
+      "nome": "CG 160 Start",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 15000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "CG 160 Fan",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 17000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "CG 160 Titan",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 19000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "4",
+      "nome": "Biz 125",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 16000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "5",
+      "nome": "Pop 110i",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 12000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "6",
+      "nome": "NXR 160 Bros",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 20000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+     { "id": 7, 
+     "nome": "CB 300F Twister", 
+     "marca": "Honda", "ano": 2024, 
+     "preco": 24000, 
+     "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+        ] 
+    },
+    {
+      "id": "8",
+      "nome": "XRE 300",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 30000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "9",
+      "nome": "PCX 160",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 21000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "10",
+      "nome": "ADV 160",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 24000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "11",
+      "nome": "Factor 150",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 16000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "12",
+      "nome": "Fazer 150",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 18000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "13",
+      "nome": "FZ25",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 23000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "14",
+      "nome": "Lander 250",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 27000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "15",
+      "nome": "XTZ 150 Crosser",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 19000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "16",
+      "nome": "MT-03",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 32000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "17",
+      "nome": "R3",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 35000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "18",
+      "nome": "Dominar 200",
+      "marca": "Bajaj",
+      "ano": 2024,
+      "preco": 20000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "19",
+      "nome": "Dominar 400",
+      "marca": "Bajaj",
+      "ano": 2024,
+      "preco": 25000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "20",
+      "nome": "Meteor 350",
+      "marca": "Royal Enfield",
+      "ano": 2024,
+      "preco": 24000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "21",
+      "nome": "Classic 350",
+      "marca": "Royal Enfield",
+      "ano": 2024,
+      "preco": 23000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "22",
+      "nome": "Himalayan 411",
+      "marca": "Royal Enfield",
+      "ano": 2024,
+      "preco": 28000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "23",
+      "nome": "NK 400",
+      "marca": "CFMoto",
+      "ano": 2024,
+      "preco": 33000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "24",
+      "nome": "250SR",
+      "marca": "CFMoto",
+      "ano": 2024,
+      "preco": 29000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "25",
+      "nome": "GSX-S750",
+      "marca": "Suzuki",
+      "ano": 2023,
+      "preco": 48000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "26",
+      "nome": "V-Strom 650",
+      "marca": "Suzuki",
+      "ano": 2023,
+      "preco": 52000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "27",
+      "nome": "Z400",
+      "marca": "Kawasaki",
+      "ano": 2024,
+      "preco": 34000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "28",
+      "nome": "Ninja 400",
+      "marca": "Kawasaki",
+      "ano": 2024,
+      "preco": 36000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "29",
+      "nome": "G 310 R",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 39000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "30",
+      "nome": "G 310 GS",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 43000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "31",
+      "nome": "F 900 R",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 72000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "32",
+      "nome": "F 900 GS",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 79000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "33",
+      "nome": "F 900 GS Adventure",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 91000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "34",
+      "nome": "R 1300 GS",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 110000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "35",
+      "nome": "R 1300 GS Adventure",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 14000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "36",
+      "nome": "S 1000 RR",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 140000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "37",
+      "nome": "S 1000 R",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 120000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "38",
+      "nome": "M 1000 R",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 180000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "39",
+      "nome": "M 1000 RR",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 220000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "40",
+      "nome": "R 18",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 135000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "41",
+      "nome": "R 12",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 90000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "42",
+      "nome": "K 1600 GTL",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 320000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "43",
+      "nome": "C 400 X",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 65000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "44",
+      "nome": "Ninja 650",
+      "marca": "Kawasaki",
+      "ano": 2024,
+      "preco": 45000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "45",
+      "nome": "Z900",
+      "marca": "Kawasaki",
+      "ano": 2024,
+      "preco": 60000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "46",
+      "nome": "Ninja ZX-10R",
+      "marca": "Kawasaki",
+      "ano": 2024,
+      "preco": 120000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "47",
+      "nome": "MT-07",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 47000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "48",
+      "nome": "MT-09",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 58000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "49",
+      "nome": "MT-10",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 85000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "50",
+      "nome": "Tracer 900 GT",
+      "marca": "Yamaha",
+      "ano": 2024,
+      "preco": 75000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "51",
+      "nome": "Panigale V4",
+      "marca": "Ducati",
+      "ano": 2024,
+      "preco": 180000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "52",
+      "nome": "Monster 937",
+      "marca": "Ducati",
+      "ano": 2024,
+      "preco": 95000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "53",
+      "nome": "Multistrada V4",
+      "marca": "Ducati",
+      "ano": 2024,
+      "preco": 150000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "54",
+      "nome": "Street Triple 765",
+      "marca": "Triumph",
+      "ano": 2024,
+      "preco": 58000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "55",
+      "nome": "Tiger 900",
+      "marca": "Triumph",
+      "ano": 2024,
+      "preco": 72000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "56",
+      "nome": "Rocket 3",
+      "marca": "Triumph",
+      "ano": 2024,
+      "preco": 120000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "57",
+      "nome": "CBR 1000RR-R Fireblade",
+      "marca": "Honda",
+      "ano": 2024,
+      "preco": 190000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "58",
+      "nome": "Hayabusa",
+      "marca": "Suzuki",
+      "ano": 2024,
+      "preco": 115000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "59",
+      "nome": "Ninja H2",
+      "marca": "Kawasaki",
+      "ano": 2024,
+      "preco": 250000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    },
+    {
+      "id": "60",
+      "nome": "S1000RR",
+      "marca": "BMW",
+      "ano": 2024,
+      "preco": 140000,
+      "imagem": [
+        "/assets/exemplo1.jpg",
+        "/assets/exemplo2.jpg"
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

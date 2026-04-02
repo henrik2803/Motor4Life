@@ -1,58 +1,50 @@
-import { useState, useEffect } from "react"
+import { useState } from "react";
 
-function MotoForm({ onSubmit, motoEdit }) {
+function MotoForm({ onSubmit, initialData = {} }) {
   const [form, setForm] = useState({
-    nome: "",
-    marca: "",
-    ano: "",
-    preco: "",
-    imagem: ""
-  })
-
-  useEffect(() => {
-    if (motoEdit) {
-      setForm(motoEdit)
-    }
-  }, [motoEdit])
+    name: initialData.nome || "",
+    price: initialData.preco || "",
+    brand: initialData.marca || "",
+    year: initialData.ano || "",
+    image: initialData.imagem || "",
+  });
 
   function handleChange(e) {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value
-    })
+    setForm({ ...form, [e.target.nome]: e.target.value });
   }
 
   function handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    onSubmit({
+    const moto = {
       ...form,
-      preco: Number(form.preco),
-      ano: Number(form.ano)
-    })
+      price: Number(form.preco),
+      year: Number(form.ano),
+      images: [form.imagem], // base simples
+    };
+
+    onSubmit(moto);
 
     setForm({
       nome: "",
+      preco: "",
       marca: "",
       ano: "",
-      preco: "",
-      imagem: ""
-    })
+      imagem: "",
+    });
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <input name="nome" placeholder="Nome" value={form.nome} onChange={handleChange} />
-      <input name="marca" placeholder="Marca" value={form.marca} onChange={handleChange} />
-      <input name="ano" type="number" placeholder="Ano" value={form.ano} onChange={handleChange} />
-      <input name="preco" type="number" placeholder="Preço" value={form.preco} onChange={handleChange} />
-      <input name="imagem" placeholder="URL da imagem" value={form.imagem} onChange={handleChange} />
+      <input name="name" placeholder="Nome" value={form.nome} onChange={handleChange} />
+      <input name="price" placeholder="Preço" value={form.preco} onChange={handleChange} />
+      <input name="brand" placeholder="Marca" value={form.marca} onChange={handleChange} />
+      <input name="year" placeholder="Ano" value={form.ano} onChange={handleChange} />
+      <input name="image" placeholder="URL da imagem" value={form.imagem} onChange={handleChange} />
 
-      <button type="submit">
-        {motoEdit ? "Atualizar" : "Cadastrar"}
-      </button>
+      <button type="submit">Salvar</button>
     </form>
-  )
+  );
 }
 
-export default MotoForm
+export default MotoForm;
