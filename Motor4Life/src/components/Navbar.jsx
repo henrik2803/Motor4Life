@@ -5,6 +5,11 @@ import { CartContext } from "../context/CartContext";
 function Navbar() {
   const { cart } = useContext(CartContext);
 
+  const totalItems = cart.reduce(
+    (acc, item) => acc + item.quantity,
+    0
+  );
+
   return (
     <nav>
       <h2>MotoStore</h2>
@@ -18,7 +23,7 @@ function Navbar() {
 
       <div>
         <Link to="/carrinho">
-          Carrinho ({cart.length})
+          Carrinho ({totalItems})
         </Link>
       </div>
     </nav>

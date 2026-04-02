@@ -17,3 +17,13 @@ export function getFavorites() {
 export function saveFavorites(favorites) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites));
 }
+const CART_KEY = "cart";
+
+export function getCart() {
+  const data = localStorage.getItem(CART_KEY);
+  return data ? JSON.parse(data) : [];
+}
+
+export function saveCart(cart) {
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+}
