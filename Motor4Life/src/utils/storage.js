@@ -19,7 +19,7 @@ export function saveFavorites(favorites) {
 }
 const CART_KEY = "cart";
 
-export function getCart() {
+export default function getCart() {
   const data = localStorage.getItem(CART_KEY);
   return data ? JSON.parse(data) : [];
 }
