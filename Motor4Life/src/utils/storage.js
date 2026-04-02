@@ -27,3 +27,27 @@ export default function getCart() {
 export function saveCart(cart) {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
 }
+const USER_KEY = "users";
+const SESSION_KEY = "session";
+
+export function getUsers() {
+  const data = localStorage.getItem(USER_KEY);
+  return data ? JSON.parse(data) : [];
+}
+
+export function saveUsers(users) {
+  localStorage.setItem(USER_KEY, JSON.stringify(users));
+}
+
+export function saveSession(user) {
+  localStorage.setItem(SESSION_KEY, JSON.stringify(user));
+}
+
+export function getSession() {
+  const data = localStorage.getItem(SESSION_KEY);
+  return data ? JSON.parse(data) : null;
+}
+
+export function clearSession() {
+  localStorage.removeItem(SESSION_KEY);
+}

@@ -2,11 +2,12 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
-  const { login } = useContext(AuthContext);
+function Cadastro() {
+  const { register } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
+    name: "",
     email: "",
     password: ""
   });
@@ -21,8 +22,8 @@ function Login() {
     e.preventDefault();
 
     try {
-      login(form);
-      navigate("/");
+      register(form);
+      navigate("/login");
     } catch (err) {
       setError(err.message);
     }
@@ -30,18 +31,19 @@ function Login() {
 
   return (
     <div>
-      <h1>Login</h1>
+      <h1>Cadastro</h1>
 
       {error && <p>{error}</p>}
 
       <form onSubmit={handleSubmit}>
+        <input name="name" placeholder="Nome" onChange={handleChange} />
         <input name="email" placeholder="Email" onChange={handleChange} />
         <input name="password" type="password" placeholder="Senha" onChange={handleChange} />
 
-        <button type="submit">Entrar</button>
+        <button type="submit">Cadastrar</button>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default Cadastro;
