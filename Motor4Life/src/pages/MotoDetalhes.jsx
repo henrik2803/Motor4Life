@@ -43,18 +43,18 @@ function MotoDetalhes() {
 
   return (
     <div>
-      <h1>{moto.nome}</h1>
+      <h1>{moto.name}</h1>
 
       {/* IMAGEM PRINCIPAL */}
       <img
-        src={moto.imagem[selectedImage]}
-        alt={moto.nome}
+        src={moto.images[selectedImage]}
+        alt={moto.name}
         width="400"
       />
 
       {/* GALERIA */}
       <div>
-        {moto.imagem.map((img, index) => (
+        {moto.images.map((img, index) => (
           <img
             key={index}
             src={img}
@@ -67,10 +67,10 @@ function MotoDetalhes() {
       </div>
 
       {/* INFO */}
-      <p>Marca: {moto.marca}</p>
-      <p>Ano: {moto.ano}</p>
-      <p>Tipo: {moto.tipo}</p>
-      <h2>{formatPrice(moto.preco)}</h2>
+      <p>Marca: {moto.brand}</p>
+      <p>Ano: {moto.year}</p>
+      <p>Tipo: {moto.type}</p>
+      <h2>{formatPrice(moto.price)}</h2>
 
       {/* AÇÕES */}
       <button onClick={() => addToCart(moto)}>

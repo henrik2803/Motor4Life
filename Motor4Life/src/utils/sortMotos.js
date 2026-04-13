@@ -1,10 +1,10 @@
 export function sortMotos(motos, ordem) {
   if (ordem === "asc") {
-    return [...motos].sort((a, b) => a.preco - b.preco)
+    return [...motos].sort((a, b) => a.price - b.price)
   }
 
   if (ordem === "desc") {
-    return [...motos].sort((a, b) => b.preco - a.preco)
+    return [...motos].sort((a, b) => b.price - a.price)
   }
 
   return motos

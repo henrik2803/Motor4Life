@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { calculateTotal } from "../utils/calculateTotal";
 import { formatPrice } from "../utils/formatPrice";
+import { useNavigate } from "react-router-dom";
 
 function Carrinho() {
   const {
@@ -14,6 +15,8 @@ function Carrinho() {
 
   const total = calculateTotal(cart);
 
+  const navigate = useNavigate();
+
   if (cart.length === 0) {
     return <h2>Carrinho vazio</h2>;
   }
@@ -24,8 +27,8 @@ function Carrinho() {
 
       {cart.map((item) => (
         <div key={item.id}>
-          <h3>{item.nome}</h3>
-          <p>{formatPrice(item.preco)}</p>
+          <h3>{item.name}</h3>
+          <p>{formatPrice(item.price)}</p>
 
           <div>
             <button onClick={() => decreaseQuantity(item.id)}>-</button>
@@ -43,9 +46,10 @@ function Carrinho() {
 
       <button onClick={clearCart}>Limpar carrinho</button>
 
-      <button onClick={() => alert("Checkout realizado (fake)")}>
-        Finalizar compra
-      </button>
+        <button onClick={() => navigate("/checkout")}>
+          Finalizar compra
+        </button>
+
     </div>
   );
 }

@@ -11,12 +11,12 @@ function MotoCard({ moto }) {
 
   return (
     <div>
-      <img src={moto.imagem || moto.images?.[0]} alt={moto.nome} width="200" />
+      <img src={moto.images || moto.images?.[0]} alt={moto.name} width="200" />
 
-      <h3>{moto.nome}</h3>
-      <p>{moto.marca}</p>
-      <p>{moto.ano}</p>
-      <p>{formatPrice(moto.preco)}</p>
+      <h3>{moto.name}</h3>
+      <p>{moto.brand}</p>
+      <p>{moto.year}</p>
+      <p>{formatPrice(moto.price)}</p>
 
       <button onClick={() => toggleFavorite(moto)}>
         {isFavorite(moto.id) ? "❤️" : "🤍"}
