@@ -1,3 +1,6 @@
-export function calculateTotal(items) {
-  return items.reduce((total, item) => total + item.price, 0)
+export function calculateTotal(cart) {
+  return cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 }
