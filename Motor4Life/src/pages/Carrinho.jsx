@@ -50,6 +50,7 @@ function Carrinho() {
           Finalizar compra
         </button>
 
+
     </div>
   );
 }

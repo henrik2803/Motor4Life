@@ -8,6 +8,7 @@ import Comparar from "../pages/Comparar";
 import Dashboard from "../pages/Dashboard";
 import Login from "../pages/Login";
 import Cadastro from "../pages/Cadastro";
+import Checkout from "../pages/Checkout";
 
 import PrivateRoute from "./PrivateRoute";
 
@@ -21,6 +22,7 @@ function AppRoutes() {
       <Route path="/comparar" element={<Comparar />} />
       <Route path="/login" element={<Login />} />
       <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="/checkout" element={<Checkout />} />
 
       <Route
         path="/dashboard"
