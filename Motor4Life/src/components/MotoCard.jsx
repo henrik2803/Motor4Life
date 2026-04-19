@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-
+import { memo } from "react";
 import { CartContext } from "../context/CartContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 import { formatPrice } from "../utils/formatPrice";
@@ -22,6 +22,7 @@ function MotoCard({ moto }) {
           src={image}
           alt={moto.name}
           className={styles.image}
+          loading="lazy"
         />
       </div>
 
@@ -64,4 +65,4 @@ function MotoCard({ moto }) {
   );
 }
 
-export default MotoCard;
+export default memo(MotoCard);

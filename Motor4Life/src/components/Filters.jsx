@@ -1,4 +1,5 @@
 import styles from "../styles/components/Filter.module.css";
+import { useCallback } from "react";
 
 function Filter({ filters, setFilters, motos }) {
 
@@ -6,9 +7,13 @@ function Filter({ filters, setFilters, motos }) {
   const types = [...new Set(motos.map((m) => m.type))];
   const years = [...new Set(motos.map((m) => m.year))];
 
-  function handleChange(e) {
-    setFilters({ ...filters, [e.target.name]: e.target.value });
-  }
+  const handleChange = useCallback((e) => {
+    const { name, value } = e.target;
+    setFilters((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+  }, [setFilters]);
 
   return (
     <div className={styles.container}>

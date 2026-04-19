@@ -2,6 +2,7 @@ import useFetch from "../hooks/useFetch";
 import MotoCard from "../components/MotoCard";
 import Filter from "../components/Filters";
 import Loader from "../components/Loader";
+import { useMemo } from "react";
 
 import { useState } from "react";
 import { filterMotos } from "../utils/filterMotos";
@@ -35,8 +36,13 @@ function Home() {
       </div>
     );
 
-  const filtered = filterMotos(motos, filters);
-  const sorted = sortMotos(filtered, filters.sort);
+      const filtered = useMemo(() => {
+          return filterMotos(motos, filters);
+      }, [motos, filters]);
+
+      const sorted = useMemo(() => {
+          return sortMotos(filtered, filters.sort);
+      }, [filtered, filters.sort]);
 
   return (
     <div className={styles.container}>
