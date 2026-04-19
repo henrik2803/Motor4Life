@@ -61,10 +61,16 @@ export function CartProvider({ children }) {
     setCart([]);
   }
 
+  function handleadd(id) {
+    addToCart(moto);
+    alert("Adicionado ao carrinho!");
+  }
+
   return (
     <CartContext.Provider
       value={{
         cart,
+        handleadd,
         addToCart,
         removeFromCart,
         increaseQuantity,

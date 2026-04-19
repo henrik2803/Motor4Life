@@ -56,6 +56,9 @@ function Dashboard() {
       {motos.map((moto) => (
         <div key={moto.id}>
           <p>{moto.name}</p>
+          <p>{moto.brand}</p>
+          <p>{moto.year}</p>
+          <p>R$ {moto.price.toFixed(2)}</p>
           <button onClick={() => handleDelete(moto.id)}>
             Deletar
           </button>
