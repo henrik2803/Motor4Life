@@ -1,0 +1,51 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* LAYOUT PRINCIPAL */
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+/* SIDEBAR (FILTROS) */
+.sidebar {
+  width: 250px;
+}
+
+/* GRID DE MOTOS */
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ESTADO VAZIO */
+.empty {
+  text-align: center;
+  padding: 40px;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}

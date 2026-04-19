@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BOTÕES PADRÃO */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* INPUTS */
+input,
+select {
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}

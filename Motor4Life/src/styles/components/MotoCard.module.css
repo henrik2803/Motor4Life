@@ -1,0 +1,108 @@
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGEM */
+.imageWrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTEÚDO */
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.brand {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+.year {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* AÇÕES */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* BOTÕES */
+.button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.cartButton {
+  background: var(--primary);
+  color: white;
+}
+
+.cartButton:hover {
+  background: var(--primary-hover);
+}
+
+.favoriteButton {
+  background: var(--bg);
+  color: var(--text);
+}
+.favoriteButton:hover {
+  background: var(--border);
+}
+/* LINK */
+.details {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+}

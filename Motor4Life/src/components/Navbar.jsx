@@ -1,31 +1,55 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { AuthContext } from "../context/AuthContext";
+
+import styles from "../styles/components/Navbar.module.css";
 
 function Navbar() {
   const { cart } = useContext(CartContext);
   const { user, logout } = useContext(AuthContext);
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const totalItems = cart.reduce(
     (acc, item) => acc + item.quantity,
     0
   );
 
-  return (
-    <nav>
-      <h2>MotoStore</h2>
+  function toggleMenu() {
+    setMenuOpen(!menuOpen);
+  }
 
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/favoritos">Favoritos</Link>
-        <Link to="/comparar">Comparar</Link>
-        <Link to="/dashboard">Dashboard</Link>
+  return (
+    <nav className={styles.navbar}>
+      {/* LOGO */}
+      <h2 className={styles.logo}>MotoStore</h2>
+
+      {/* BOTÃO HAMBURGUER */}
+      <button className={styles.hamburger} onClick={toggleMenu}>
+        ☰
+      </button>
+
+      {/* LINKS */}
+      <div
+        className={`${styles.links} ${
+          menuOpen ? styles.active : ""
+        }`}
+      >
+        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/favoritos" onClick={() => setMenuOpen(false)}>Favoritos</Link>
+        <Link to="/comparar" onClick={() => setMenuOpen(false)}>Comparar</Link>
+        <Link to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</Link>
       </div>
 
-      <div>
-        <Link to="/carrinho">
-          Carrinho ({totalItems})
+      {/* AÇÕES */}
+      <div
+        className={`${styles.actions} ${
+          menuOpen ? styles.active : ""
+        }`}
+      >
+        <Link to="/carrinho" onClick={() => setMenuOpen(false)}>
+          🛒 ({totalItems})
         </Link>
 
         {user ? (

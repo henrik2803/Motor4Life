@@ -1,0 +1,15 @@
+:root {
+  --primary: #ff6600;
+  --primary-hover: #e65c00;
+
+  --bg: #ffffff;
+  --text: #222;
+  --text-light: #666;
+
+  --border: #e5e5e5;
+
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  --transition: 0.2s ease;
+}

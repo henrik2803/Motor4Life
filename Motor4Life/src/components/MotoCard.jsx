@@ -5,28 +5,61 @@ import { CartContext } from "../context/CartContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 import { formatPrice } from "../utils/formatPrice";
 
+import styles from "../styles/components/MotoCard.module.css";
+
 function MotoCard({ moto }) {
   const { addToCart } = useContext(CartContext);
   const { toggleFavorite, isFavorite } = useContext(FavoritesContext);
 
+  const image =
+    Array.isArray(moto.images) ? moto.images[0] : moto.images;
+
   return (
-    <div>
-      <img src={moto.images || moto.images?.[0]} alt={moto.name} width="200" />
+    <div className={styles.card}>
+      {/* IMAGEM */}
+      <div className={styles.imageWrapper}>
+        <img
+          src={image}
+          alt={moto.name}
+          className={styles.image}
+        />
+      </div>
 
-      <h3>{moto.name}</h3>
-      <p>{moto.brand}</p>
-      <p>{moto.year}</p>
-      <p>{formatPrice(moto.price)}</p>
+      {/* CONTEÚDO */}
+      <div className={styles.content}>
+        <h3 className={styles.title}>{moto.name}</h3>
+        <p className={styles.brand}>{moto.brand}</p>
+        <p className={styles.year}>{moto.year}</p>
 
-      <button onClick={() => toggleFavorite(moto)}>
-        {isFavorite(moto.id) ? "❤️" : "🤍"}
-      </button>
+        <p className={styles.price}>
+          {formatPrice(moto.price)}
+        </p>
 
-      <button onClick={() => addToCart(moto)}>
-            🛒 Adicionar
-      </button>
+        {/* AÇÕES */}
+        <div className={styles.actions}>
+          <button
+            className={`${styles.button} ${styles.favoriteButton}`}
+            onClick={() => toggleFavorite(moto)}
+          >
+            {isFavorite(moto.id) ? "❤️" : "🤍"}
+          </button>
 
-      <Link to={`/moto/${moto.id}`}>Ver detalhes</Link>
+          <button
+            className={`${styles.button} ${styles.cartButton}`}
+            onClick={() => addToCart(moto)}
+          >
+            🛒
+          </button>
+        </div>
+
+        {/* DETALHES */}
+        <Link
+          to={`/moto/${moto.id}`}
+          className={styles.details}
+        >
+          Ver detalhes
+        </Link>
+      </div>
     </div>
   );
 }
