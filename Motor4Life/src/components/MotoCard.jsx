@@ -4,12 +4,14 @@ import { memo } from "react";
 import { CartContext } from "../context/CartContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 import { formatPrice } from "../utils/formatPrice";
+import { ToastContext } from "../context/ToastContext";
 
 import styles from "../styles/components/MotoCard.module.css";
 
 function MotoCard({ moto }) {
   const { addToCart } = useContext(CartContext);
   const { toggleFavorite, isFavorite } = useContext(FavoritesContext);
+  const { showToast } = useContext(ToastContext);
 
   const image =
     Array.isArray(moto.images) ? moto.images[0] : moto.images;
@@ -40,16 +42,27 @@ function MotoCard({ moto }) {
         <div className={styles.actions}>
           <button
             className={`${styles.button} ${styles.favoriteButton}`}
-            onClick={() => toggleFavorite(moto)}
+            onClick={() => {
+              toggleFavorite(moto);
+              showToast(
+                isFavorite(moto.id)
+                  ? "Moto removida dos favoritos"
+                  : "Moto adicionada aos favoritos",
+                isFavorite(moto.id) ? "error" : "success"
+              );
+            }}
           >
             {isFavorite(moto.id) ? "❤️" : "🤍"}
           </button>
 
           <button
             className={`${styles.button} ${styles.cartButton}`}
-            onClick={() => addToCart(moto)}
+            onClick={() => {
+              addToCart(moto);
+              showToast("Moto adicionada ao carrinho!", "success");
+            }}
           >
-            🛒
+            🛒 adicionar
           </button>
         </div>
 

@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
-
+import { ToastContext } from "../context/ToastContext";
 import { getMotoById } from "../services/api";
 import { CartContext } from "../context/CartContext";
 import { FavoritesContext } from "../context/FavoritesContext";
 import { CompareContext } from "../context/CompareContext";
 import { formatPrice } from "../utils/formatPrice";
+
 
 function MotoDetalhes() {
   const { id } = useParams();
@@ -19,6 +20,7 @@ function MotoDetalhes() {
   const { addToCart } = useContext(CartContext);
   const { favorites, toggleFavorite } = useContext(FavoritesContext);
   const { addToCompare } = useContext(CompareContext);
+  const { showToast } = useContext(ToastContext);
 
   useEffect(() => {
     async function fetchMoto() {
@@ -73,15 +75,29 @@ function MotoDetalhes() {
       <h2>{formatPrice(moto.price)}</h2>
 
       {/* AÇÕES */}
-      <button onClick={() => addToCart(moto)}>
-        Adicionar ao carrinho
-      </button>
+      <button
+        onClick={() => {
+              addToCart(moto);
+              showToast("Moto adicionada ao carrinho", "success");
+        }}
+      >
+  🛒 Adicionar
+</button>
 
-      <button onClick={() => toggleFavorite(moto)}>
+      <button onClick={() => {
+        toggleFavorite(moto);
+        showToast(
+          isFavorite ? "Moto removida dos favoritos" : "Moto adicionada aos favoritos",
+          isFavorite ? "error" : "success"
+        );
+      }}>
         {isFavorite ? "❤️ Remover" : "🤍 Favoritar"}
       </button>
 
-      <button onClick={() => addToCompare(moto)}>
+      <button onClick={() => {
+        addToCompare(moto);
+        showToast("Moto adicionada para comparação", "success");
+      }}>
         Comparar
       </button>
     </div>
