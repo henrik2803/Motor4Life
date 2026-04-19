@@ -23,7 +23,7 @@ function MotoCard({ moto }) {
       </button>
 
       <button onClick={() => addToCart(moto)}>
-        Adicionar ao carrinho
+            🛒 Adicionar
       </button>
 
       <Link to={`/moto/${moto.id}`}>Ver detalhes</Link>
