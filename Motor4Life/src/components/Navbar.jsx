@@ -26,9 +26,26 @@ function Navbar() {
       <h2 className={styles.logo}>MotoStore</h2>
 
       {/* BOTÃO HAMBURGUER */}
-      <button className={styles.hamburger} onClick={toggleMenu}>
-        ☰
+     <button
+        className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
+        onClick={toggleMenu}
+      >
+          <span></span>
+          <span></span>
+          <span></span>
+
+      {/* BADGE DO CARRINHO */}
+          {totalItems > 0 && (
+            <span className={styles.badge}>{totalItems}</span>
+          )}
       </button>
+
+        {menuOpen && (
+          <div
+            className={styles.overlay}
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
 
       {/* LINKS */}
       <div
