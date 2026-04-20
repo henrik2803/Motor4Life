@@ -2,9 +2,8 @@ import useFetch from "../hooks/useFetch";
 import MotoCard from "../components/MotoCard";
 import Filter from "../components/Filters";
 import Loader from "../components/Loader";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 
-import { useState } from "react";
 import { filterMotos } from "../utils/filterMotos";
 import { sortMotos } from "../utils/sortMotos";
 
@@ -24,6 +23,32 @@ function Home() {
     sort: ""
   });
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
+  /* RESETAR PÁGINA AO FILTRAR */
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filters]);
+
+  /* FILTRO */
+  const filtered = useMemo(() => {
+    if (!motos) return [];
+    return filterMotos(motos, filters);
+  }, [motos, filters]);
+
+  /* ORDENAÇÃO */
+  const sorted = useMemo(() => {
+    return sortMotos(filtered, filters.sort);
+  }, [filtered, filters.sort]);
+
+  /* PAGINAÇÃO */
+  const totalPages = Math.ceil(sorted.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentMotos = sorted.slice(startIndex, endIndex);
+
+  /* AGORA SIM — RETURNS */
   if (loading) return <Loader />;
 
   if (error)
@@ -36,24 +61,13 @@ function Home() {
       </div>
     );
 
-      const filtered = useMemo(() => {
-          return filterMotos(motos, filters);
-      }, [motos, filters]);
-
-      const sorted = useMemo(() => {
-          return sortMotos(filtered, filters.sort);
-      }, [filtered, filters.sort]);
-
   return (
     <div className={styles.container}>
-      {/* HEADER */}
       <div className={styles.header}>
         <h1 className={styles.title}>Motos</h1>
       </div>
 
-      {/* LAYOUT */}
       <div className={styles.content}>
-        {/* FILTROS */}
         <aside className={styles.sidebar}>
           <Filter
             filters={filters}
@@ -62,10 +76,9 @@ function Home() {
           />
         </aside>
 
-        {/* GRID */}
         <div className={styles.grid}>
           {sorted.length > 0 ? (
-            sorted.map((moto) => (
+            currentMotos.map((moto) => (
               <MotoCard key={moto.id} moto={moto} />
             ))
           ) : (
@@ -76,6 +89,28 @@ function Home() {
           )}
         </div>
       </div>
+
+      {sorted.length > 0 && (
+        <div className={styles.pagination}>
+          <button
+            onClick={() => setCurrentPage((p) => p - 1)}
+            disabled={currentPage === 1}
+          >
+            ←
+          </button>
+
+          <span>
+            Página {currentPage} de {totalPages}
+          </span>
+
+          <button
+            onClick={() => setCurrentPage((p) => p + 1)}
+            disabled={currentPage === totalPages}
+          >
+            →
+          </button>
+        </div>
+      )}
     </div>
   );
 }
