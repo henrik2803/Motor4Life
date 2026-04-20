@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { AuthContext } from "../context/AuthContext";
+import { ThemeContext } from "../context/ThemeContext";
 
 import styles from "../styles/components/Navbar.module.css";
 
 function Navbar() {
   const { cart } = useContext(CartContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const { user, logout } = useContext(AuthContext);
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +26,14 @@ function Navbar() {
     <nav className={styles.navbar}>
       {/* LOGO */}
       <h2 className={styles.logo}>MotoStore</h2>
+
+      <button
+        className={styles.themeToggle}
+        onClick={toggleTheme}
+      >
+        {theme === "light" ? "🌙" : "☀️"}
+      </button>
+
 
       {/* BOTÃO HAMBURGUER */}
      <button

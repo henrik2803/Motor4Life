@@ -4,9 +4,12 @@ import App from "./App";
 import "./styles/global.css";
 import "./styles/variables.css";
 import "./styles/toast.css";
+import { ThemeProvider } from "./context/ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

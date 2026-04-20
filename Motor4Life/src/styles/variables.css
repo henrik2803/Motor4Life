@@ -13,3 +13,12 @@
 
   --transition: 0.2s ease;
 }
+
+/* DARK */
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card: #1e1e1e;
+  --border: #333;
+  --primary: #fff;
+}

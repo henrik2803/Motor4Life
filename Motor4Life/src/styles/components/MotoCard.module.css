@@ -84,7 +84,7 @@
 
 .cartButton {
   background: var(--primary);
-  color: white;
+  color: var(--text);
 }
 
 .cartButton:hover {
@@ -103,6 +103,6 @@
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
-  color: var(--primary);
+  color: var(--text);
   text-decoration: none;
 }
