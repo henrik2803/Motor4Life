@@ -1,24 +1,40 @@
+/* LIGHT MODE */
 :root {
-  --primary: #ff6600;
-  --primary-hover: #e65c00;
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --card: #ffffff;
 
-  --bg: #ffffff;
-  --text: #222;
-  --text-light: #666;
+  --text: #1a1a1a;
+  --text-secondary: #555;
 
-  --border: #e5e5e5;
+  --border: #e5e7eb;
+  --radius: 6px;
+  --transition: all 0.3s ease;
 
-  --radius: 8px;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --danger: #ef4444;
+
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-  --transition: 0.2s ease;
 }
 
-/* DARK */
+/* DARK MODE */
 [data-theme="dark"] {
-  --bg: #121212;
-  --text: #f1f1f1;
-  --card: #1e1e1e;
-  --border: #333;
-  --primary: #fff;
+  --bg: #0f172a;
+  --surface: #111827;
+  --card: #1f2933;
+
+  --text: #e5e7eb;
+  --text-secondary: #9ca3af;
+
+  --border: #2d3748;
+
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+
+  --danger: #f87171;
+
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }

@@ -1,19 +1,14 @@
 .card {
+  background: var(--card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: var(--bg);
   box-shadow: var(--shadow);
-
-  display: flex;
-  flex-direction: column;
-
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 /* IMAGEM */
@@ -40,21 +35,22 @@
 .title {
   font-size: 18px;
   font-weight: 600;
+  color: var(--text);
 }
 
 .subtitle {
   font-size: 14px;
-  color: var(--text-light);
+  color: var(--text-secondary);
 }
 
 .brand {
   font-size: 14px;
-  color: var(--text-light);
+  color: var(--text-secondary);
 }
 
 .year {
   font-size: 13px;
-  color: var(--text-light);
+  color: var(--text-secondary);
 }
 
 .price {
@@ -78,7 +74,8 @@
   border-radius: var(--radius);
   transition: var(--transition);
   cursor: pointer;
-
+  background: var(--primary);
+  color: var(--text);
   font-size: 14px;
 }
 

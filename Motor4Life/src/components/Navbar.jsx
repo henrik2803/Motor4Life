@@ -82,7 +82,9 @@ function Navbar() {
         {user ? (
           <>
             <span>{user.name}</span>
-            <button onClick={logout}>Sair</button>
+            <button className={styles.button} onClick={logout}>
+              Sair
+            </button>
           </>
         ) : (
           <>

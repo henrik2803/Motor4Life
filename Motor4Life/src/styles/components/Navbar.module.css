@@ -5,8 +5,8 @@
   align-items: center;
 
   padding: 15px 20px;
-  border-bottom: 1px solid #eee;
-  background: #fff;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
 
   position: relative;
   z-index: 1001;
@@ -121,6 +121,104 @@
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+/* BOTÃO DE TEMA */
+
+.themeToggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--card-bg);
+  color: var(--text);
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+  transition: all 0.3s ease;
+} 
+.themeToggle {
+  position: relative;
+}
+
+.themeToggle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: 0.15;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.themeToggle:hover::after {
+  transform: scale(1.4);
+  opacity: 0.25;
+}
+
+/*botao de sair*/
+.button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--text);
+  font-size: 14px;
+}
+.button:hover {
+  background: var(--primary-hover);
+}
+
+
+/* HOVER */
+
+.themeToggle:hover {
+  transform: scale(1.0) rotate(20deg);
+}
+
+/* ÍCONE */
+
+.themeToggle {
+  font-size: 22px;
+  transition: transform 0.4ss ease;
+}
+
+/* ANIMAÇÃO AO TROCAR */
+
+.themeToggle:active {
+  transform: rotate(180deg) scale(0.8);
+}
+/* links menu hamburguer */
+
+.links {
+  position: relative;
+}
+
+.links::after::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+
+  width: 0%;
+  height: 2px;
+
+  background: var(--primary);
+  transition: var(--transition);
+}
+
+.links:hover::after {
+  width: 100%;
 }
 
 /* ========================= */

@@ -15,21 +15,21 @@
 .toast {
   min-width: 220px;
   padding: 12px 16px;
-
+  background: var(--surface);
   border-radius: 8px;
-  color: white;
+  color: var(--text);
   font-size: 14px;
-
+  border: 1px solid var(--border);
   animation: slideIn 0.3s ease;
 }
 
 /* TIPOS */
 .toast.success {
-  background: #28a745;
+  background: #16a34a;
 }
 
 .toast.error {
-  background: #dc3545;
+  background: #dc2626;
 }
 
 .toast.info {
