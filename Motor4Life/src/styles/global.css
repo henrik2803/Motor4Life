@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
+
 body {
+  padding-top: 80px;
   font-family: Arial, sans-serif;
   background: var(--bg);
   color: var(--text);

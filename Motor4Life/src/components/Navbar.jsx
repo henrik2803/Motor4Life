@@ -25,7 +25,8 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       {/* LOGO */}
-      <h2 className={styles.logo}>MotoStore</h2>
+      <Link to="/" className={styles.logo} >MotoStore</Link>
+    
 
       <button
         className={styles.themeToggle}

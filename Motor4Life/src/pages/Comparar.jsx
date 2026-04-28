@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CompareContext } from "../context/CompareContext";
 
-import styles from "../styles/components/Comparar.module.css";
+import styles from "../styles/pages/Comparar.module.css";
 
 function Comparar() {
   const { compareItems, removeFromCompare } = useContext(CompareContext);
