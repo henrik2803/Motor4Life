@@ -6,8 +6,7 @@
       "year": 2024,
       "price": 15000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -17,8 +16,7 @@
       "year": 2024,
       "price": 17000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -28,8 +26,7 @@
       "year": 2024,
       "price": 19000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -39,8 +36,7 @@
       "year": 2024,
       "price": 16000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -50,8 +46,7 @@
       "year": 2024,
       "price": 12000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -61,8 +56,7 @@
       "year": 2024,
       "price": 20000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
      { "id": 7, 
@@ -70,8 +64,7 @@
      "brand": "Honda", "year": 2024, 
      "price": 24000, 
      "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
         ] 
     },
     {
@@ -81,8 +74,7 @@
       "year": 2024,
       "price": 30000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -92,8 +84,7 @@
       "year": 2024,
       "price": 21000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -103,8 +94,7 @@
       "year": 2024,
       "price": 24000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -114,8 +104,7 @@
       "year": 2024,
       "price": 16000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -125,8 +114,7 @@
       "year": 2024,
       "price": 18000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -136,8 +124,7 @@
       "year": 2024,
       "price": 23000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -147,8 +134,7 @@
       "year": 2024,
       "price": 27000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -158,8 +144,7 @@
       "year": 2024,
       "price": 19000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -169,8 +154,7 @@
       "year": 2024,
       "price": 32000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -180,8 +164,7 @@
       "year": 2024,
       "price": 35000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -191,8 +174,7 @@
       "year": 2024,
       "price": 20000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -202,8 +184,7 @@
       "year": 2024,
       "price": 25000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -213,8 +194,7 @@
       "year": 2024,
       "price": 24000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -224,8 +204,7 @@
       "year": 2024,
       "price": 23000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -235,8 +214,7 @@
       "year": 2024,
       "price": 28000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -246,8 +224,7 @@
       "year": 2024,
       "price": 33000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -257,8 +234,7 @@
       "year": 2024,
       "price": 29000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -268,8 +244,7 @@
       "year": 2023,
       "price": 48000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -279,8 +254,7 @@
       "year": 2023,
       "price": 52000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -290,8 +264,7 @@
       "year": 2024,
       "price": 34000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -301,8 +274,7 @@
       "year": 2024,
       "price": 36000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -312,8 +284,7 @@
       "year": 2024,
       "price": 39000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -323,8 +294,7 @@
       "year": 2024,
       "price": 43000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -334,8 +304,7 @@
       "year": 2024,
       "price": 72000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -345,8 +314,7 @@
       "year": 2024,
       "price": 79000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -356,8 +324,7 @@
       "year": 2024,
       "price": 91000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -367,8 +334,7 @@
       "year": 2024,
       "price": 110000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -378,8 +344,7 @@
       "year": 2024,
       "price": 14000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -389,8 +354,7 @@
       "year": 2024,
       "price": 140000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -400,8 +364,7 @@
       "year": 2024,
       "price": 120000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -411,8 +374,7 @@
       "year": 2024,
       "price": 180000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -422,8 +384,7 @@
       "year": 2024,
       "price": 220000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -433,8 +394,7 @@
       "year": 2024,
       "price": 135000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -444,8 +404,7 @@
       "year": 2024,
       "price": 90000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -455,8 +414,7 @@
       "year": 2024,
       "price": 320000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -466,8 +424,7 @@
       "year": 2024,
       "price": 65000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -477,8 +434,7 @@
       "year": 2024,
       "price": 45000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -488,8 +444,7 @@
       "year": 2024,
       "price": 60000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -499,8 +454,7 @@
       "year": 2024,
       "price": 120000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -510,8 +464,7 @@
       "year": 2024,
       "price": 47000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -521,8 +474,7 @@
       "year": 2024,
       "price": 58000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -532,8 +484,7 @@
       "year": 2024,
       "price": 85000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -543,8 +494,7 @@
       "year": 2024,
       "price": 75000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -554,8 +504,7 @@
       "year": 2024,
       "price": 180000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -565,8 +514,7 @@
       "year": 2024,
       "price": 95000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -576,8 +524,7 @@
       "year": 2024,
       "price": 150000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -587,8 +534,7 @@
       "year": 2024,
       "price": 58000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -598,8 +544,7 @@
       "year": 2024,
       "price": 72000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -609,8 +554,7 @@
       "year": 2024,
       "price": 120000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -620,8 +564,7 @@
       "year": 2024,
       "price": 190000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -631,8 +574,7 @@
       "year": 2024,
       "price": 115000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -642,8 +584,7 @@
       "year": 2024,
       "price": 250000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     },
     {
@@ -653,8 +594,7 @@
       "year": 2024,
       "price": 140000,
       "images": [
-        "/assets/ex.png",
-        "/assets/ex2.png"
+        "",""
       ]
     }
   ],

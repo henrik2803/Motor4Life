@@ -1,16 +1,17 @@
 import { useState } from "react";
+import styles from "../styles/components/MotoForm.module.css";
 
 function MotoForm({ onSubmit, initialData = {} }) {
   const [form, setForm] = useState({
-    name: initialData.nome || "",
-    price: initialData.preco || "",
-    brand: initialData.marca || "",
-    year: initialData.ano || "",
-    image: initialData.imagem || "",
+    name: initialData.name || "",
+    price: initialData.price || "",
+    brand: initialData.brand || "",
+    year: initialData.year || "",
+    image: initialData.image || "",
   });
 
   function handleChange(e) {
-    setForm({ ...form, [e.target.nome]: e.target.value });
+    setForm({ ...form, [e.target.name]: e.target.value });
   }
 
   function handleSubmit(e) {
@@ -18,31 +19,84 @@ function MotoForm({ onSubmit, initialData = {} }) {
 
     const moto = {
       ...form,
-      price: Number(form.preco),
-      year: Number(form.ano),
-      images: [form.imagem], // base simples
+      price: Number(form.price),
+      year: Number(form.year),
+      images: [form.image],
     };
 
     onSubmit(moto);
 
     setForm({
-      nome: "",
-      preco: "",
-      marca: "",
-      ano: "",
-      imagem: "",
+      name: "",
+      price: "",
+      brand: "",
+      year: "",
+      image: "",
     });
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input name="name" placeholder="Nome" value={form.nome} onChange={handleChange} />
-      <input name="price" placeholder="Preço" value={form.preco} onChange={handleChange} />
-      <input name="brand" placeholder="Marca" value={form.marca} onChange={handleChange} />
-      <input name="year" placeholder="Ano" value={form.ano} onChange={handleChange} />
-      <input name="image" placeholder="URL da imagem" value={form.imagem} onChange={handleChange} />
+    <form onSubmit={handleSubmit} className={styles.form}>
 
-      <button type="submit">Salvar</button>
+      <div className={styles.inputGroup}>
+        <label>Nome</label>
+        <input
+          name="name"
+          placeholder="Ex: Yamaha MT-07"
+          value={form.name}
+          onChange={handleChange}
+          className={styles.input}
+        />
+      </div>
+
+      <div className={styles.inputGroup}>
+        <label>Preço</label>
+        <input
+          name="price"
+          placeholder="Ex: 35000"
+          value={form.price}
+          onChange={handleChange}
+          className={styles.input}
+        />
+      </div>
+
+      <div className={styles.inputGroup}>
+        <label>Marca</label>
+        <input
+          name="brand"
+          placeholder="Ex: Yamaha"
+          value={form.brand}
+          onChange={handleChange}
+          className={styles.input}
+        />
+      </div>
+
+      <div className={styles.inputGroup}>
+        <label>Ano</label>
+        <input
+          name="year"
+          placeholder="Ex: 2022"
+          value={form.year}
+          onChange={handleChange}
+          className={styles.input}
+        />
+      </div>
+
+      <div className={styles.inputGroup}>
+        <label>Imagem (URL)</label>
+        <input
+          name="image"
+          placeholder="https://..."
+          value={form.image}
+          onChange={handleChange}
+          className={styles.input}
+        />
+      </div>
+
+      <button type="submit" className={styles.btnPrimary}>
+        Salvar
+      </button>
+
     </form>
   );
 }
