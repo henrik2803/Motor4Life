@@ -1,0 +1,103 @@
+.container {
+  padding: 40px 20px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* SECTION */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* INPUT GROUP */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* INPUT / SELECT */
+.input,
+.select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  background: var(--surface);
+  color: var(--text);
+  transition: 0.2s;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.input:hover,
+.select:hover {
+  border-color: #999;
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+/* BOTÃO */
+.btnPrimary {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #00c853;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnPrimary:hover {
+  background: #00a844;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
