@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../styles/components/MotoForm.module.css";
+import styles from "../styles/components/Motoform.module.css";
 
 function MotoForm({ onSubmit, initialData = {} }) {
   const [form, setForm] = useState({
