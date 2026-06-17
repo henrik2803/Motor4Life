@@ -1,50 +1,75 @@
-const BASE_URL = "http://localhost:3000/motos";
+import { supabase } from "./supabase";
 
 // GET ALL
 export async function getMotos() {
-  const res = await fetch(BASE_URL);
-  if (!res.ok) throw new Error("Erro ao buscar motos");
-  return res.json();
+  const { data, error } = await supabase
+    .from("motos")
+    .select("*")
+    .order("id");
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return data;
 }
 
 // GET BY ID
 export async function getMotoById(id) {
-  const res = await fetch(`${BASE_URL}/${id}`);
-  if (!res.ok) throw new Error("Moto não encontrada");
-  return res.json();
+  const { data, error } = await supabase
+    .from("motos")
+    .select("*")
+    .eq("id", id)
+    .single();
+
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return data;
 }
 
 // CREATE
 export async function createMoto(moto) {
-  const res = await fetch(BASE_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(moto),
-  });
+  const { data, error } = await supabase
+    .from("motos")
+    .insert([moto])
+    .select()
+    .single();
 
-  if (!res.ok) throw new Error("Erro ao criar moto");
+  if (error) {
+    throw new Error(error.message);
+  }
 
-  return res.json();
+  return data;
 }
 
 // UPDATE
 export async function updateMoto(id, moto) {
-  const res = await fetch(`${BASE_URL}/${id}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(moto),
-  });
+  const { data, error } = await supabase
+    .from("motos")
+    .update(moto)
+    .eq("id", id)
+    .select()
+    .single();
 
-  if (!res.ok) throw new Error("Erro ao atualizar moto");
+  if (error) {
+    throw new Error(error.message);
+  }
 
-  return res.json();
+  return data;
 }
 
 // DELETE
 export async function deleteMoto(id) {
-  const res = await fetch(`${BASE_URL}/${id}`, {
-    method: "DELETE",
-  });
+  const { error } = await supabase
+    .from("motos")
+    .delete()
+    .eq("id", id);
 
-  if (!res.ok) throw new Error("Erro ao deletar moto");
+  if (error) {
+    throw new Error(error.message);
+  }
+
+  return true;
 }

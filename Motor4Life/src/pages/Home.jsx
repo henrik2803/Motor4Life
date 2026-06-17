@@ -10,9 +10,7 @@ import { sortMotos } from "../utils/sortMotos";
 import styles from "../styles/pages/Home.module.css";
 
 function Home() {
-  const { data: motos, loading, error } = useFetch(
-    "http://localhost:3000/motos"
-  );
+ const { data: motos, loading, error } = useFetch();
 
   const [filters, setFilters] = useState({
     search: "",

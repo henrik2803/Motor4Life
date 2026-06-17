@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { getMotos } from "../services/api";
 
-function useFetch(url) {
+function useFetch() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -8,12 +9,9 @@ function useFetch(url) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch(url);
+        const motos = await getMotos();
 
-        if (!res.ok) throw new Error("Erro ao buscar dados");
-
-        const json = await res.json();
-        setData(json);
+        setData(motos);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -22,9 +20,13 @@ function useFetch(url) {
     }
 
     fetchData();
-  }, [url]);
+  }, []);
 
-  return { data, loading, error };
+  return {
+    data,
+    loading,
+    error,
+  };
 }
 
 export default useFetch;
